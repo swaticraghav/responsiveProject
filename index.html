@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>    
+        <!-- Responsive Design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Google Fonts - Festive, Dancing Script -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Festive&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+
+        <!-- W3.css framework -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <title>Media Queries</title>
+    </head>
+    <body>
+        <h1>MEDIA QUERIES</h1>
+        <div class="row row-one">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+        </div>
+        
+        <h2> 1. Handling equal height for each columns for different breakpoints</h2>
+        <div class="row row-two">
+            <div class="col span-1-of-4 each-col">Lorem ipsum dolor sit amet</div>
+            <div class="col span-1-of-4 each-col">Donec quam felis</div>
+            <div class="col span-1-of-4 each-col">fringilla vel, aliquet nec</div>
+            <div class="col span-1-of-4 each-col">Donec pede justo</div>
+        </div>
+        
+        <h2> 2. Responsive web design - Images</h2>
+        <div class="row">
+            <img class="flower-one" src="resources/images/ball.png" alt="Flower-1" width="460" height="345">
+            <p>This image is responsive, it is scaling up and down. <br> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. </p>
+        </div>
+        <br>
+        <div class="row">
+            <img class="flower-two" src="resources/images/ball.png" alt="Flower-1" width="460" height="345">
+            <p>This image is responsive, it is scaling up and down. <br> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. </p>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3 bg-image bg-image-1"></div>
+            <div class="col span-1-of-3 bg-image bg-image-2"></div>
+            <div class="col span-1-of-3 bg-image bg-image-3"></div>
+        </div>
+        <div class="row">
+            <picture>
+              <source srcset="resources/css/images/tree.jpg" media="(max-width: 480px)">
+              <source srcset="resources/css/images/flower-1.jpg" media="(max-width: 820px)">
+              <img src="resources/css/images/flower-2.jpg" alt="Flowers" style="width:auto;">
+            </picture>
+        </div>
+        
+        <div class="w3-container w3-green framework">
+            <h1>A great way to create a responsive design, is to use a responsive style sheet, like W3.CSS</h1>
+            <p>Nulla consequat massa quis enim!</p>
+        </div>
+        <div class="w3-row-padding">
+            <div class="w3-third">
+                <h2>Java</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. </p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+            </div>
+            <div class="w3-third">
+                <h2>CSS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. </p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+            </div>
+            <div class="w3-third">
+                <h2>JS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. </p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+            </div>
+        </div>      
+       
+    </body>
+</html>

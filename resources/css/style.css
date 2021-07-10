@@ -1,0 +1,110 @@
+/* --------------------------------------------------------------- */
+/* Basic Setup */
+/* --------------------------------------------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Festive, Calibri, sans-serif;
+    font-size: 30px;
+}
+
+/* --------------------------------------------------------------- */
+/* Content CSS */
+/* --------------------------------------------------------------- */
+
+h1,
+h2 {
+    font-family: 'Dancing Script', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin: 40px auto;
+}
+
+h1::after {
+    display: block;
+    width: 50%;
+    height: 5px;
+    background-color: blue;
+    content: " ";
+    
+    margin-top: 20px;
+    margin-left: 25%;
+}
+
+.row {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 10px;
+    
+    /* For equal height column */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.each-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --------------------------------------------------------------- */
+/* Content CSS */
+/* --------------------------------------------------------------- */
+
+.row-one {
+    border: 2px solid black;
+}
+
+.each-col {
+    padding: 20px;
+    border: 2px solid black;
+}
+
+/* --------------------------------------------------------------- */
+/* RWD Images */
+/* --------------------------------------------------------------- */
+
+.flower-one {
+    width: 100%;
+    height: auto;
+}
+
+.flower-two {
+    max-width: 100%;
+    height: auto;
+}
+
+.bg-image {
+    height: 300px;
+    border: 2px solid red;
+    background-image: url(images/flower-1.jpg);
+}
+
+.bg-image-1 {
+    background-size: cover;
+}
+
+.bg-image-2 {
+    background-size: 100% 100%;
+}
+
+.bg-image-3 {
+    background-size: contain;
+}
+
+.framework p {
+    margin-left: 30px;
+}
+
+/* --------------------------------------------------------------- */
+/* Bootstrap */
+/* --------------------------------------------------------------- */
+
+.row-correction {
+    /* This will nog be needed if only bootstrap is used here.*/
+    max-width: unset;
+}
